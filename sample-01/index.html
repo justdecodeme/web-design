@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Theory</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+</head>
+<body>
+  <!-- banner -->
+  <section class="banner" id="banner">
+    <div class="container">
+      <header class="flex">
+        <a href="#">Theory</a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Generic</a></li>
+            <li><a href="#">Elements</a></li>
+          </ul>
+        </nav>
+        <span class="menu" id="menuBtn"><i class="fas fa-bars"></i></span>
+        <span class="close" id="closeBtn"><i class="fas fa-times"></i></span>
+      </header>
+      <h1>Welcome</h1>
+    </div>
+  </section>
+
+  <!-- features -->
+  <section class="features">
+    <div class="container flex">
+      <div class="feature">
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="primary-btn">More</a>
+      </div>
+      <div class="feature">
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="primary-btn">More</a>
+      </div>
+      <div class="feature">
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="primary-btn">More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- team -->
+  <section class="team">
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dore asidle lomti</p>
+    <div class="container flex">
+      <div class="member">
+        <img src="images/pic03.jpg" alt="john">
+        <h2>John</h2>
+        <h3>Lorem Ipsum</h3>
+      </div>
+      <div class="member">
+        <img src="images/pic04.jpg" alt="john">
+        <h2>Daniel</h2>
+        <h3>Lorem Ipsum</h3>
+      </div>
+      <div class="member">
+        <img src="images/pic05.jpg" alt="john">
+        <h2>Tempus</h2>
+        <h3>Lorem Ipsum</h3>
+      </div>
+      <div class="member">
+        <img src="images/pic06.jpg" alt="john">
+        <h2>Dolore</h2>
+        <h3>Lorem Ipsum</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- post -->
+  <section class="posts">
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dore asidle lomti</p>
+    <div class="container flex">
+      <div class="post">
+        <img src="images/pic01.jpg" alt="john">
+        <h2>What is Lorem Ipsum?</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        <a href="#" class="primary-btn">More</a>
+      </div>
+      <div class="post">
+        <img src="images/pic02.jpg" alt="john">
+        <h2>What is Lorem Ipsum?</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        <a href="#" class="primary-btn">More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+   <footer>
+    <div class="container flex">
+      <p>&copy; Lorem Ipsum</p>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+   </footer>
+
+   <script>
+     var menuBtn = document.getElementById('menuBtn');
+     var closeBtn = document.getElementById('closeBtn');
+     var banner = document.getElementById('banner');
+
+     menuBtn.addEventListener('click', function() {
+       console.log('open');
+       banner.classList.add('mobile');
+     })
+     closeBtn.addEventListener('click', function() {
+       console.log('close');
+       banner.classList.remove('mobile');
+     })
+   </script>
+</body>
+</html>

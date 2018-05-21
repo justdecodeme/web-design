@@ -1,0 +1,289 @@
+/*********** PC ***********/
+
+/*********** common styles ***********/
+* {
+  box-sizing: border-box;
+}
+body, ul {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.primary-btn {
+  background: #5385c1;
+  color: wheat;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+.primary-btn:hover {
+  opacity: 0.8;
+}
+
+/*********** banner styles ***********/
+.banner {
+  background-image: url(images/banner.jpg);
+  border-top: 10px solid #5385c1;
+  padding-top: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner li {
+  display: inline;
+  margin-left: 30px;
+}
+.banner a {
+  color: white;
+  text-decoration: none;
+}
+.banner a:hover {
+  opacity: 0.7;
+}
+.banner h1 {
+  text-align: center;
+  padding: 150px 0 180px 0;
+  color: white;
+  font-size: 60px;
+  font-weight: lighter;
+  margin: 0;
+}
+.banner span {
+  display: none;
+  color: white;
+}
+.banner span:hover {
+  cursor: pointer;
+}
+
+/*********** features styles ***********/
+.features {
+  padding: 100px 0;
+}
+.features .feature h1 {
+  color: #5385c1;
+}
+.features .feature p {
+  color: #a0a0a0;
+  margin: 30px 0;
+}
+.features .feature:nth-child(1) {
+  padding-right: 50px;
+}
+.features .feature:nth-child(2) {
+  padding: 0 50px;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+}
+.features .feature:nth-child(3) {
+  padding-left: 50px;
+}
+
+/*********** team styles ***********/
+.team {
+  background: #5385c1;
+  padding: 100px 0;
+}
+.team h1, .team p {
+  text-align: center;
+  color: #a3c9dc;
+  font-family: 'Raleway', sans-serif;
+}
+.team h1 {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+.team p {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+.team .member {
+  text-align: center;
+  border: 1px solid #7ea4d1;
+  padding: 40px 20px;
+}
+.team img {
+  border-radius: 100%;
+}
+.team .member h2 {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+.team .member h3 {
+  text-align: center;
+  color: #a3c9dc;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/*********** post styles ***********/
+.posts {
+  padding: 100px 0;
+}
+.posts h1, .posts p {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+.posts h1 {
+  color: #5385c1;
+  font-size: 40px;
+  margin: 0;
+}
+.posts p {
+  color: #bfbfbf;
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+.posts .post {
+  max-width: 480px;
+}
+.posts .post img {
+  max-width: 100%;
+}
+.posts .post h2 {
+  color: #5385c1;
+  font-weight: normal;
+}
+.posts .post h3 {
+  color: #b3a6a9;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-bottom: 30px;
+}
+
+/*********** footer styles ***********/
+footer .container {
+  padding: 20px 0;
+  border-top: 1px solid #dbdbdb;
+}
+footer p {
+  color: #7a7e83;
+}
+footer ul li {
+  display: inline;
+  margin-left: 20px;
+}
+footer ul li a {
+  color: #5385c1;
+}
+footer ul li a:hover {
+  opacity: 0.8;
+}
+
+
+/*********** MOBILE ***********/
+
+@media only screen and (max-width: 600px) {
+  /*********** common styles ***********/
+  .primary-btn {
+    width: 100%;
+  }
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  /*********** banner styles ***********/
+  .banner {
+    padding-top: 30px;
+  }
+  .banner h1 {
+    padding: 60px 0 80px 0;
+    font-size: 40px;
+  }
+  .banner nav {
+    display: none;
+    background: #5385c1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 10px;
+  }
+  .banner.mobile nav {
+    display: inline;
+  }
+  .banner nav ul li a {
+    color: #b1c7e2;
+    text-decoration: none;
+    min-width: 250px;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid #6692c8;
+  }
+  .banner nav ul li a:hover {
+    color: white;
+  }
+  .banner nav ul li:last-child a {
+    border: 0;
+  }
+  .banner .menu {
+    display: inline;
+  }
+  .banner .close {
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    display: none;
+  }
+  .banner.mobile .close {
+    display: inline;
+  }
+
+  /*********** features styles ***********/
+  .features {
+    padding: 50px 0 20px 0;
+  }
+  .features .container {
+    flex-flow: column;
+    text-align: center;
+  }
+  .features .feature {
+    padding: 0!important;
+    margin-bottom: 30px;
+    border: none!important;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  /*********** team styles ***********/
+  .team {
+    padding: 50px 0 20px 0;
+  }
+  .team .container {
+    flex-flow: column-reverse;
+    text-align: center;
+  }
+  .team .member {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  /*********** post styles ***********/
+  .posts {
+    padding: 50px 0 20px 0;
+  }
+  .posts .container {
+    flex-flow: column;
+    text-align: center;
+  }
+  .posts .post {
+    margin-bottom: 50px;
+  }
+
+  /*********** footer styles ***********/
+  footer .container {
+    flex-flow: column-reverse;
+  }
+  footer p {
+    margin-bottom: 0;
+  }
+}
