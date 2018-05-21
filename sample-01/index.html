@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Theory</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
 </head>
 <body>
   <!-- banner -->
-  <section class="banner" id="banner">
+  <div class="banner" id="banner">
     <div class="container">
       <header class="flex">
         <a href="#">Theory</a>
@@ -27,10 +27,10 @@
       </header>
       <h1>Welcome</h1>
     </div>
-  </section>
+  </div>
 
   <!-- features -->
-  <section class="features">
+  <div class="features">
     <div class="container flex">
       <div class="feature">
         <h1>What is Lorem Ipsum?</h1>
@@ -48,10 +48,10 @@
         <a href="#" class="primary-btn">More</a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- team -->
-  <section class="team">
+  <div class="team">
     <h1>Lorem Ipsum</h1>
     <p>Lorem ipsum dore asidle lomti</p>
     <div class="container flex">
@@ -76,10 +76,10 @@
         <h3>Lorem Ipsum</h3>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- post -->
-  <section class="posts">
+  <div class="posts">
     <h1>Lorem Ipsum</h1>
     <p>Lorem ipsum dore asidle lomti</p>
     <div class="container flex">
@@ -96,33 +96,19 @@
         <a href="#" class="primary-btn">More</a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- footer -->
-   <footer>
-    <div class="container flex">
-      <p>&copy; Lorem Ipsum</p>
-      <ul>
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
-    </div>
-   </footer>
-
-   <script>
-     var menuBtn = document.getElementById('menuBtn');
-     var closeBtn = document.getElementById('closeBtn');
-     var banner = document.getElementById('banner');
-
-     menuBtn.addEventListener('click', function() {
-       console.log('open');
-       banner.classList.add('mobile');
-     })
-     closeBtn.addEventListener('click', function() {
-       console.log('close');
-       banner.classList.remove('mobile');
-     })
-   </script>
+  <footer>
+   <div class="container flex">
+     <p>&copy; Lorem Ipsum</p>
+     <ul>
+       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+     </ul>
+   </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ body, ul {
 
 /*********** banner styles ***********/
 .banner {
-  background-image: url(images/banner.jpg);
+  background-image: url(../images/banner.jpg);
   border-top: 10px solid #5385c1;
   padding-top: 80px;
   background-repeat: no-repeat;
